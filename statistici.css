@@ -13,3 +13,32 @@ body,html
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
+.stat{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 300px;
+}
+* {box-sizing: border-box}
+.title{
+  text-align: center;
+}
+.subtitle
+{
+  font-size: 30px;
+}
+.container {
+  width: 100%;
+  background-color: #ddd;
+}
+.Views {
+  text-align: right;
+  padding: 10px;
+  color: white;
+}
+
+.Femei {width: 65%; background-color: #4CAF50;}
+.Barbati {width: 25%; background-color: #2196F3;}
+.Baietei {width: 5%; background-color: #f44336;}
+.Fetite {width: 5%; background-color: #ADFF2F;}
