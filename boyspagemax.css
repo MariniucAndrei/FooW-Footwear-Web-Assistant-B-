@@ -1,13 +1,17 @@
 body,html{
   height: 100%;
   margin: 0px;
-  background-color:	#c5ebff;
- background-image: radial-gradient( #FFC6A8, #FFE4E1, #033076);
+  background-color:	#FFE4E1;
+  background-image: radial-gradient( #FFC6A8, #FFE4E1, #033076);
+  width: 100%;
+}
+.navbar1{
+  width:auto;
 }
 .menu{
 
-  width:inherit;
-  display:flex;
+   width:100%;
+  display:block;
   background:linear-gradient(to bottom right,#033076, #FFE4E1, #FFC6A8,#033076);
   list-style-type:none;
   margin: 0;
@@ -41,9 +45,9 @@ body,html{
   background:linear-gradient(to bottom,#F0D3D1 ,#00144A);
 }
 .dropdown-content{
-  padding-top:1%;
   display: none;
-  position: absolute;
+  padding-top: 1%;
+  position: relative;
   background: linear-gradient(to bottom right,#033076, #FFE4E1, #FFC6A8,#033076);
   min-width: 160px;
   box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2);
@@ -51,29 +55,30 @@ body,html{
 }
 .dropdown-content a{
   color:white;
-  padding: 2px 2px;
+  padding-top: 1%;
   text-decoration: none;
-  display: block;
+  display: inline;
   font-style: italic;
   font-weight: bold;
   font-size:2em;
   font-family:fontAwesome;
 }
 .dropdown-content a:hover{background:linear-gradient(to bottom,#F0D3D1 ,#00144A);}
-.dropdown:hover .dropdown-content{display: block;}
+.dropdown:hover .dropdown-content{display: inline;}
 
-
-.Flex  {
-  position: center;
-  bottom: 50px;
+.Flex {
+  text-align: center;
+  font-size: 30px;
+  float: center;
   color: black;
-  font-size: 300%;
+  font-size: 200%;
   font-style: italic;
   padding-right: 0;
   margin: 0;
   border: 0;
 display: inline;
 }
+
 .rezphoto{
   height: 200px;
   width: 238px;
@@ -86,20 +91,20 @@ display: inline;
   list-style-type: none;
 }
  .pas1 li{
-   margin-left: 8px;
-   float: right;
+   margin-right: 8px;
+   float: left;
    position:static;
 }
  .pas1 li:hover{
    opacity: 0.6;
 }
 .pozaCo{
-  float: center;
+  float: center;width: 100%;
+  height: 15%;
   width: 100%;
-  height: 60%;
 }
 .dr{
-  float:left;
+  float:right;
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 10%;
@@ -109,7 +114,4 @@ display: inline;
   text-decoration-style:wavy;
   font-style: italic;
   font-size: large;
-}
-.Text{
-  text-align: center;
 }
