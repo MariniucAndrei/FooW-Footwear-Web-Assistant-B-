@@ -137,13 +137,30 @@ padding-top: 1%;
   float: left;
   display:inline-flex;
 }
+
+
 .Link-uri{
-  margin-left: 20px;
-  float:left;
-  display: inline-flex;
+  flex:1;
   margin-right: 20%;
 }
+.link{
+  padding-top: 10%;
+  margin-left: 20px;
+  float:left;
+    margin-right: 20%;
+
+}
+.stelute{
+  margin-left: 20%;
+  flex:1;
+  margin-top: 10%;
+}
+.checked {
+  color: orange;
+  display: inline;}
+
 .Recomandare{
+  flex:1;
   margin-top: 15px;
   display:inline-flex;
 
