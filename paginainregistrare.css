@@ -15,7 +15,7 @@ body,html
 }
 
 input[type=text], select {
-  margin: 0,30%,0,30%;
+  margin: 0 30% 0 30%;
   padding: 14px 20px;
   margin: 8px 0;
   display: block;
