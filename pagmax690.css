@@ -1,8 +1,7 @@
 body,html{
   height: 100%;
   margin: 0px;
-  background-color:	#FFE4E1;
-    background-image: radial-gradient( #FFC6A8, #FFE4E1, #A52E56);
+  background-image: radial-gradient( #FFC6A8, #FFE4E1, #A52E56);
 }
 .navbar1{
   width:100%;
@@ -98,12 +97,7 @@ display: inline;
   height: 15%;
   width: 100%;
 }
-.dr{
-  float:right;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 10%;
-}
+
 .main{
   text-align: center;
   text-decoration-style:wavy;

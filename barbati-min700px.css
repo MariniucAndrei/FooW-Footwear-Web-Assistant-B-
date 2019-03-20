@@ -1,7 +1,6 @@
 body , html{
   height: 100%;
   margin: 0px;
-  background-color:	#B2D9D6;
  background-image:radial-gradient( #FFC6A8, #FFE4E1, #033076);
 
 }
@@ -97,13 +96,6 @@ display: inline;
  }
  .pas1 li:hover{
    opacity: 0.6;
-}
-
-.dr{
-  float:left;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 10%;
 }
 
 .main{

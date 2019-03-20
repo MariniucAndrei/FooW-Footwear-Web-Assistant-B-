@@ -1,7 +1,6 @@
 body,html{
   height: 100%;
   margin: 0px;
-  background-color:	#FFDBC1;
   background-image: radial-gradient( #FFC6A8, #F78782, #FFDBC1);
 }
 
@@ -101,11 +100,6 @@ display: inline;
   float: left;
   width: 100%;
   height: 60%;
-}
-.dr{
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 10%;
 }
 .main{
   text-align: center;
