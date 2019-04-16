@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ro-RO">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Fisa Cerintelor - FooW</title>
+</head>
+<body>
+<header>
+    <h1>Fisa Cerintelor - FooW</h1>
+</header>
+<article id="what" typeof="schema:ScholarlyArticle" resource="#">
+  <div role="contentinfo">
+    <h2>Authors</h2>
+      <p>Mariniuc Andrei & Căluțu Maria & Onofrei Claudia</p>
+       </div>
+        <section id="descriere">
+        <h3>1. Descriere</h3>
+        <p>Foow (Footwear Web Assistant) este o aplicație web dedicată tuturor persoanelor care au nevoie de un ajutor când vine vorba
+          despre alegerea unei perechi de încălțăminte pentru o anumită ocazie. Scopul aplicației este acela de a ajuta femeile și barbații să
+          găsească perechea de încălțăminte ideală pentru un eveniment sau pentru o ocazie specială. De asemenea, adulții pot căuta recomandări
+           și pentru copiii lor, băieței sau fetițe.
+           Utilizând o interfață prietenoasă și ușor de folosit, utilizatorul va primi recomandările în urma selecției unor filtre.
+           Mai exact aceștia vor primi mai multe imagini cu diferite perechi de pantofi care corespund filtrelor de căutare și aferent vor avea și site-ul
+            de pe care vor putea comanda acei papuci.
+           Fiecare pereche de încălțăminte va putea fi votată de către utilizatori si fiecare recomandare va putea fi share-uită pe site-urile
+            de socializare.
+        </p>
+    </section>
+    <section>
+        <h3>2. Actori</h3>
+        <p><strong>2.1 Utilizator neautentificat:</strong> Utilizator al internetului care poate accesa site-ul nostru.
+        </p>
+        <p><strong>2.1.1</strong> Pagini la care are acces : pagina de înregisrare si pagina de conectare. </p>
+        <p><strong>2.2 Utilizator autentificat:</strong> Utilizator al internetului ce este înregistrat în baza noastră de date. </p>
+        <p><strong>2.2.1</strong> Acesta are acces pe toate paginile din interfață</p>
+        <p><strong>2.2.2</strong> Este autorizat să: </p>
+        <ul>
+        <li> citească descrierea site-ului;</li>
+        <li> trimită e-mail administratorilor site-ului;</li>
+        <li> selecteze filtrele de căutare pentru perechile de pantofi</li>
+        <li> vizualizeze perechile de pantofi si detaliile despre acestea</li>
+        <li> acceseze comentariile unui produs</li>
+        <li> adauge un comentariu;</li>
+        <li> se deconecteze;</li>
+        </ul>
+        <p><strong>2.3 Administrator:</strong> Suplimentar, acesta are acces la paginile de adăugare, modificare a bazei de date și ștergere
+           a înregistrărilor.
+        </p>
+        <p><strong>2.4 Serverul:</strong> Are rolul de a răspunde cât mai repede cerințelor clientului.
+        </p>
+    </section>
+
+    <section id="metode">
+        <h3>3. Scenarii de utilizare</h3>
+        <p><strong>3.1 Actor: Utilizator neautentificat </strong></p>
+        <p><strong>Scenariu/Pași:</strong></p>
+        <ol>
+        <li>Acesta va trebui să se conecteze/înregistreze</li>
+        </ol>
+
+        <p><strong>3.2 Actor: Utilizator autentificat</strong></p>
+        <p><strong>Scenariu/Pași:</strong></p>
+        <ol>
+          <li>Se conectează</li>
+          <li>Selectează filtrele de căutare</li>
+          <li>Vizualizează încălțămintea corespunzătoare filtrelor</li>
+          <li>Oferă rating sugestiilor</li>
+          <li>Dă share la sugestiile aplicației</li>
+          <li>Vizualizează statisticile</li>
+          <li>Contactează adminul</li>
+          <li>Se deconectează</li>
+        </ol>
+
+        <p><strong>3.3 Actor: Administrator</strong></p>
+        <p><strong> Scenariu/Pași:</strong></p>
+        <ol>
+          <li>Se conectează</li>
+          <li>Adaugă încălțăminte</li>
+          <li>Șterge încălțăminte</li>
+          <li>Modifică date</li>
+          <li>Șterge contul utilizatorilor</li>
+          <li>Se deconectează</li>
+        </ol>
+
+    </section>
+
+<section>
+  <h3>4. UseCase</h3>
+  <p><strong>4.1 Actor: Utilizator autentificat</strong></p>
+    <p><strong>4.1.1 Basic flow</strong></p>
+    <ol>
+      <li>Utilizatorul va intra pe site si va alege să se conecteze (dacă are deja un cont valabil) sau să se inregistreze (pentru a își crea un cont) și va fi redirecționat pe pagina corespunzatoare (conectare/înregistrare).</li>
+      <li>După ce se va conecta/înregistra va fi redirecționat pe pagina principală unde va primi notificări si de unde poate naviga prin întreaga aplicație folosind meniul de navigare.</li>
+      <li>După ce va alege ce pagină dorește să vadă urmatoarea dată acesta va avea de răspuns la două întrebări legate de evenimentul la care va participa si cum va fi vremea atunci. În cazul paginilor “Contact” si “Statistics” doar va putea vizualiza informațiile de pe acele pagini. Suplimentar din pagina “Contact” va putea trimite mesaje catre administratori.</li>
+      <li>După ce răspunde la cele două întrebari, utilizatorul va fi redirecționat către o pagină care în partea stângă va conține filtre suplimentare iar în restul paginii vor apărea sugestiile de încălțăminte conform filtrelor selectate. În această pagină utilizatorul poate oferi un scor sugestiilor primite și poate da share pe o rețea de socializare.</li>
+    </ol>
+
+    <p><strong>4.1.2 Exception flow</strong></p>
+    <ol>
+      <li>În cazul în care utilizatorul sare peste una dintre pagini introducând URL-ul unei alte pagini decât cea care ar trebui să urmeze, va primi o alertă în care este anunțat că a sărit peste niște pași și va fi redirecționat către prima pagină.</li>
+    </ol>
+    <p><strong>4.2 Actor: Administrator</strong></p>
+    <p><strong>4.2.1 Basic flow</strong></p>
+    <ol>
+      <li>În cazul administratorilor, aceștia se conectează si au posibilitatea de a adăuga noi produse, de a șterge produse, de a șterge conturile utilizatorilor sau de modifica anumite informații.</li>
+    </ol>
+    <p><strong>4.2.2 Exception flow</strong></p>
+    <ol>
+      <li>Dacă produsul pe care vor să îl adauge deja există aceștia vor primi un mesaj prin care vor fi anunțați acest lucru.</li>
+    </ol>
+</section>
+
+
+    <section>
+        <h3>5. Tehnologii utilizate</h3>
+        <p>Interfața aplicației a fost scrisă folosind <strong>HTML5</strong> pentru a crea componentele necesare acesteia și
+            <strong>CSS3</strong> pentru a le stiliza.
+        </p>
+        <p>HTML5 este un limbaj pentru structurarea si prezentarea continutului pentru World Wide Web, iar CSS
+            este un limbaj (style language) care defineste "layout-ul" pentru documentele HTML. CSS acopera culori,
+            font-uri, margini, linii,
+            imagini de fundal, pozitii avansate si multe alte optiuni utile in design.</p>
+        <p>Partea de backend a aplicației web se va face utilizând <strong>Node.js</strong> datorită vitezei pentru că folosește JavaScript. Fiind o tehnologie open-source,
+           Node.js are un depozit comun de instrumente și module foarte mare.</p>
+        <p>Informațiile din aplicație sunt stocate într-o bază de date <strong>relațională</strong>. Pentru aceasta se va folosi <strong>MySQL</strong>.
+        </p>
+    </section>
+    <section>
+        <h3>6. Repartizare task-uri</h3>
+        Prototip al interfeței Web
+        <ol>
+            <li>Căluțu Maria-Alexandra : meniul ,pagina principală de home ,pagina pentru admin și  pagina de afișare;</li>
+            <li>Mariniuc Andrei : pagina de logare,pagina de contact, pagina de înregistrare, pagina de statistici;</li>
+            <li>Onofrei Claudia: paginile de selectare a contextului ,atât pentru fetițe , băieței, bărbați și femei;</li>
+        </ol>
+          Arhitectura Aplicației
+        <ol>
+            <li>Căluțu Maria-Alexandra : repartizarea task-urilor, tehnologiile utilizate și secțiunea arhitecturală;</li>
+            <li>Mariniuc Andrei : cele doua UseCase-uri(administrator și utilizator), html, basic flow și exception flow;</li>
+            <li>Onofrei Claudia: actorii, șcenarii de utilizare și descrierea aplicației;</li>
+        </ol>
+    </section>
+</article>
+<footer>
+    <p>
+        TW 2018 -
+        <a href="https://github.com/MariniucAndrei/FooW-Footwear-Web-Assistant-B-">Github Repository</a>
+
+        - UAIC - Facultatea de Informatica Iasi
+    </p>
+</footer>
+</body>
+</html>
