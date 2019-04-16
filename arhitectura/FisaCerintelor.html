@@ -3,20 +3,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Fisa Cerintelor - FooW</title>
+    <link rel="stylesheet" type="text/css" href="FisaCerintelor.css">
+    <title>Fișa Cerințelor - FooW</title>
 </head>
 <body>
 <header>
-    <h1>Fisa Cerintelor - FooW</h1>
+    <h1>Fișa Cerințelor - FooW</h1>
 </header>
 <article id="what" typeof="schema:ScholarlyArticle" resource="#">
   <div role="contentinfo">
-    <h2>Authors</h2>
+    <h2>Autori</h2>
       <p>Mariniuc Andrei & Căluțu Maria & Onofrei Claudia</p>
        </div>
         <section id="descriere">
         <h3>1. Descriere</h3>
-        <p>Foow (Footwear Web Assistant) este o aplicație web dedicată tuturor persoanelor care au nevoie de un ajutor când vine vorba
+        <p>  Foow (Footwear Web Assistant) este o aplicație web dedicată tuturor persoanelor care au nevoie de un ajutor când vine vorba
           despre alegerea unei perechi de încălțăminte pentru o anumită ocazie. Scopul aplicației este acela de a ajuta femeile și barbații să
           găsească perechea de încălțăminte ideală pentru un eveniment sau pentru o ocazie specială. De asemenea, adulții pot căuta recomandări
            și pentru copiii lor, băieței sau fetițe.
@@ -83,29 +84,23 @@
           <li>Se deconectează</li>
         </ol>
 
-    </section>
-
-<section>
-  <h3>4. UseCase</h3>
-  <p><strong>4.1 Actor: Utilizator autentificat</strong></p>
-    <p><strong>4.1.1 Basic flow</strong></p>
+    <p><strong>Basic flow</strong></p>
     <ol>
-      <li>Utilizatorul va intra pe site si va alege să se conecteze (dacă are deja un cont valabil) sau să se inregistreze (pentru a își crea un cont) și va fi redirecționat pe pagina corespunzatoare (conectare/înregistrare).</li>
+      <li>Utilizatorul va intra pe site si va alege să se conecteze (dacă are deja un cont valabil) sau să se înregistreze (pentru a își crea un cont) și va fi redirecționat pe pagina corespunzatoare (conectare/înregistrare).</li>
       <li>După ce se va conecta/înregistra va fi redirecționat pe pagina principală unde va primi notificări si de unde poate naviga prin întreaga aplicație folosind meniul de navigare.</li>
       <li>După ce va alege ce pagină dorește să vadă urmatoarea dată acesta va avea de răspuns la două întrebări legate de evenimentul la care va participa si cum va fi vremea atunci. În cazul paginilor “Contact” si “Statistics” doar va putea vizualiza informațiile de pe acele pagini. Suplimentar din pagina “Contact” va putea trimite mesaje catre administratori.</li>
       <li>După ce răspunde la cele două întrebari, utilizatorul va fi redirecționat către o pagină care în partea stângă va conține filtre suplimentare iar în restul paginii vor apărea sugestiile de încălțăminte conform filtrelor selectate. În această pagină utilizatorul poate oferi un scor sugestiilor primite și poate da share pe o rețea de socializare.</li>
     </ol>
-
-    <p><strong>4.1.2 Exception flow</strong></p>
+    <p><strong>Exception flow</strong></p>
     <ol>
       <li>În cazul în care utilizatorul sare peste una dintre pagini introducând URL-ul unei alte pagini decât cea care ar trebui să urmeze, va primi o alertă în care este anunțat că a sărit peste niște pași și va fi redirecționat către prima pagină.</li>
     </ol>
-    <p><strong>4.2 Actor: Administrator</strong></p>
-    <p><strong>4.2.1 Basic flow</strong></p>
+
+    <p><strong>Basic flow</strong></p>
     <ol>
       <li>În cazul administratorilor, aceștia se conectează si au posibilitatea de a adăuga noi produse, de a șterge produse, de a șterge conturile utilizatorilor sau de modifica anumite informații.</li>
     </ol>
-    <p><strong>4.2.2 Exception flow</strong></p>
+    <p><strong>Exception flow</strong></p>
     <ol>
       <li>Dacă produsul pe care vor să îl adauge deja există aceștia vor primi un mesaj prin care vor fi anunțați acest lucru.</li>
     </ol>
@@ -140,11 +135,17 @@
             <li>Mariniuc Andrei : cele doua UseCase-uri(administrator și utilizator), html, basic flow și exception flow;</li>
             <li>Onofrei Claudia: actorii, șcenarii de utilizare și descrierea aplicației;</li>
         </ol>
+          Backend
+        <ol>
+          <li>Căluțu Maria-Alexandra : mecanismul de oferire a sugestiilor, trimitere notificări;</li>
+          <li>Mariniuc Andrei : baza de date, conectare, înregistrare, contact, rating, mecanismul de oferire a sugestiilor;</li>
+          <li>Onofrei Claudia: mecanismul de oferire a sugestiilor, statistici, funcționalitatea de share;</li>
+        </ol>
     </section>
 </article>
 <footer>
     <p>
-        TW 2018 -
+        TW 2019 -
         <a href="https://github.com/MariniucAndrei/FooW-Footwear-Web-Assistant-B-">Github Repository</a>
 
         - UAIC - Facultatea de Informatica Iasi
